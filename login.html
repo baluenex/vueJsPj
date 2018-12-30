@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>ログイン画面</title>
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+  <div id="isLogin">
+    <p>{{ message }}</p>
+  </div>
+
+  <div id="loginId">
+    <input v-model="login_id">
+    <p>入力値：{{ login_id }}</p>
+  </div>
+
+  <div id="isPasswd">
+    <p>{{ message }}</p>
+  </div>
+
+  <div id="loginPasswd">
+    <input v-model="login_passwd">
+    <p>入力値：{{ login_passwd }}</p>
+  </div>
+
+  <div id="loginSubmit">
+    <button v-on:click="checkLogin">ログイン</button>
+  </div>
+
+  <p>Result</p>
+
+  <p>
+    <p id="loginResult"></p>
+  </p>
+  <script src="./login.js"></script>
+</body>
+</html>

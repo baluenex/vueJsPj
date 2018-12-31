@@ -34,8 +34,17 @@ window.onload = function(){
       checkLogin: function(event){
         correctLoginId = "correctId"
         correctLoginPasswd = "correctPass"
-        console.log(loginId.$data.login_id)
-        console.log(loginPasswd.$data.login_passwd)
+        login_id = loginId.$data.login_id
+        login_passwd = loginPasswd.$data.login_passwd
+        console.log(login_id)
+        console.log(login_passwd)
+        if((login_id == correctLoginId)&&
+        (login_passwd == correctLoginPasswd)){
+          console.log("success!")
+        }
+        else{
+          console.log("failed...")
+        }
       }
     }
   })

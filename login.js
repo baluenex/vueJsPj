@@ -10,7 +10,7 @@ window.onload = function(){
   var loginId = new Vue({
     el: '#loginId',
     data: {
-      login_id: ''
+      login_id: 'id'
     }
   })
 
@@ -24,7 +24,7 @@ window.onload = function(){
   var loginPasswd = new Vue({
     el: '#loginPasswd',
     data: {
-      login_passwd: ''
+      login_passwd: 'passwd'
     }
   })
 
@@ -32,8 +32,8 @@ window.onload = function(){
     el: '#loginSubmit',
     methods: {
       checkLogin: function(event){
-        correctLoginId = "correctId"
-        correctLoginPasswd = "correctPass"
+        correctLoginId = "id"
+        correctLoginPasswd = "passwd"
         login_id = loginId.$data.login_id
         login_passwd = loginPasswd.$data.login_passwd
         console.log(login_id)
